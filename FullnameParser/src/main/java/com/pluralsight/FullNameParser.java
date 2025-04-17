@@ -31,9 +31,17 @@ public class FullNameParser {
         //output piece w/o middle
         if (namePieces.length == 2) {
             System.out.println("First Name: " + namePieces[0]);
+            System.out.println("Middle name: (None)");
             System.out.println("Last Name: " +  namePieces[1]);
 
         }
+
+        if (namePieces.length == 1) {
+            System.out.println("First Name: " + namePieces[0]);
+            System.out.println("Middle name: (None)");
+            System.out.println("Last name: (None)");
+        }
+
 
         }
     }
