@@ -28,8 +28,8 @@ public class TheatreReservationsApp {
 
         // for name pieces for placement swap at the end
         String[] namePieces = name.split(" ");
-
-        if (tickets > 1){
+    if 
+        if (tickets > 1) {
             System.out.println( tickets + " tickets reserved for " + outputDate + " under " + namePieces[1] + ", " + namePieces[0]);
         } else {
             System.out.println( tickets + " ticket reserved for " + outputDate + " under " + namePieces[1] + ", " + namePieces[0]);
