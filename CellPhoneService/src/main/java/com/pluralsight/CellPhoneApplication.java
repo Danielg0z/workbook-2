@@ -22,22 +22,43 @@ public class CellPhoneApplication {
         System.out.println("What is the Phone Number? ");
         String pN = myScanner.nextLine();
 
-        System.out.println("What is the Ownerr? ");
+        System.out.println("What is the Owner? ");
         String owner = myScanner.nextLine();
 
         //set the cellphone data to the object
-        myPhone.setSerialNumber( Integer.parseInt(sN));
+        myPhone.setSerialNumber(Integer.parseInt(sN));
         myPhone.setModel(model);
         myPhone.setPhoneNumber(pN);
         myPhone.setOwner(owner);
 
         //use the getters to Display this Information
+//        System.out.println("SN: " + myPhone.getSerialNumber());
+//        System.out.println("model: " + myPhone.getModel());
+//        System.out.println("Carrier: " + myPhone.getCarrier());
+//        System.out.println("Phone number: " + myPhone.getPhoneNumber());
+//        System.out.println("Owner: " + myPhone.getOwner());
+
+        //Create a second phone
+        Cellphone otherPhone = new Cellphone();
+        otherPhone.setPhoneNumber("911-123-0987");
+        otherPhone.setOwner("Kevin Durant");
+
+
+        display(myPhone);
+        display(otherPhone);
+
+        myPhone.dial(otherPhone.getPhoneNumber());
+        otherPhone.dial(myPhone.getPhoneNumber());
+
+
+    }
+
+    public static void display(Cellphone myPhone) {
         System.out.println("SN: " + myPhone.getSerialNumber());
         System.out.println("model: " + myPhone.getModel());
         System.out.println("Carrier: " + myPhone.getCarrier());
         System.out.println("Phone number: " + myPhone.getPhoneNumber());
         System.out.println("Owner: " + myPhone.getOwner());
-
-
     }
+
 }
