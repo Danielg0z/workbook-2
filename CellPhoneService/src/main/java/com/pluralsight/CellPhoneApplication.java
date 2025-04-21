@@ -43,6 +43,16 @@ public class CellPhoneApplication {
         otherPhone.setPhoneNumber("911-123-0987");
         otherPhone.setOwner("Kevin Durant");
 
+        //Create more constructors for Exercise 3
+        Cellphone thirdPhone = new Cellphone();
+        thirdPhone.setOwner("");
+        thirdPhone.setPhoneNumber();
+        thirdPhone.setModel("");
+        
+
+
+
+
 
         display(myPhone);
         display(otherPhone);
